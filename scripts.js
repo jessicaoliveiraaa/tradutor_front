@@ -60,8 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textoPronuncia.innerText = '';
 
         try {
-            const response = await fetch('https://tradutor-api-jessica.onrender.com/traduzir', {
-                method: 'POST',
+const response = await fetch('https://tradutor-api-jessica.onrender.com/api/traduzir', {                method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 // Enviando explicitamente as três variáveis necessárias
                 body: JSON.stringify({ 
